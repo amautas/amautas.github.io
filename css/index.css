@@ -1,0 +1,560 @@
+/* Aquí se define exclusivamente estilo aplicado a la página home/index */
+
+/* Importa el stlyles.css para enlazar los estilos del brand, header y footer */
+@import url(styles.css);
+
+
+
+/* Estilos de la sección Portada 1 */
+
+#portada1 {
+    background-color: #efefef;
+}
+.portada1 {
+    height: calc(70vh - 80px);
+}
+
+.foto_portada1 {
+    display: flex;
+    justify-content: center;
+    width: auto;
+    height: 100%;
+
+    & img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+.textos_portada1 {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    justify-content: center;
+
+    & h1 {
+        color: var(--colornegro);
+    }
+}
+
+/* Estilos de la sección Portada 2 */
+#portada2 {
+    background-image: url("../image/banner.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.portada2 {
+    height: calc(60vh - 80px);
+}
+
+
+.boton_portada2 {
+    position: relative;
+    top: 55%;
+    left: 5%;
+}
+
+/* .producto {
+    position: absolute;
+    display: inline-block;
+
+    & .foto_producto {
+        width: 100;
+        height: auto;
+    }
+
+    & .boton_producto {
+        position: absolute;
+        bottom: 0%;
+        left:20%;
+        padding:25px ;
+    }
+} */
+/* ESTILOS DE PRODUCTOS */
+
+.productos_titulo h3 {
+    text-align: center;
+    color: var(--colorprincipal);
+    padding-bottom: 80px;
+}
+
+.servicio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+
+}
+
+.servicio_foto img {
+    width: 100%;
+    height: auto;
+    border-radius: 60px;
+}
+.servicio_boton{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    padding: 15px 0;
+}
+#banner {
+    background-color: var(--colorprincipal);
+}
+
+.banner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.banner_textos {
+    color: var(--colorblanco);
+}
+
+/* ESTILOS DE testimonio */
+
+.testimonios_titulo h3 {
+    text-align: center;
+    color: var(--colorprincipal);
+    padding-bottom: 80px;
+}
+
+.testimonio {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 25px;
+
+    & h5 {
+        text-transform: none;
+        color: var(--coloramarrillo);
+    }
+}
+
+.testimonio_foto img {
+    width: 100%;
+    height: auto;
+    border-radius: 25px;
+}
+
+/* ESTILO CERTIFICADO*/
+#certificados{
+    background-color: var(--colorverdeclaro);
+}
+.certificados_texto h4{
+    text-align: center;
+    color: var(--colorprincipal);
+}
+.certificados {
+    padding: 15px 0;
+
+}
+.certificado{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+    
+    }
+.certificado_foto img {
+    width: 100%;
+    height: auto;
+    border-radius: 25px;
+}
+/* ESTILO noticias*/
+
+.textos_noticias {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    justify-content: center;
+
+    & h1 {
+        color: var(--coloramarrillo);
+    }
+}
+.foto_noticias {
+    display: flex;
+    justify-content: center;
+    width: auto;
+    height: 100%;
+
+    & img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* ESTILO NOSOTROS*/
+
+.textos_nosotros {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    justify-content: center;
+
+
+    & h1 {
+        color: var(--coloramarrillo);
+    }
+}
+.foto_nosotros {
+    display: flex;
+    justify-content: start;
+    width: auto;
+    height: 100%;
+
+    & img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* ESTILO historia*/
+.texto_historia1{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    justify-content: center;
+
+    & h2 {
+        color: var(--colornaranja);
+    }
+
+}
+
+.texto_historia3{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    justify-content: center;
+
+    & h2 {
+        color: var(--colorhistoria);
+    }
+
+}
+/* ESTILO mision*/
+.foto_mision {
+    display: flex;
+    justify-content: center;
+    width: auto;
+    height: 100%;
+
+    & img {
+        width: 100%;
+        height: auto;
+    }
+}
+.texto_mision {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    justify-content: center;
+
+    & h2 {
+        color: var(--colormision);
+    }
+}
+
+/* ESTILO equipo*/
+#personas{
+    background-color: var(--colorverdeclaro);
+}
+.personas_texto h4{
+    text-align: center;
+    color: var(--colorprincipal);
+}
+.personas {
+    padding: 15px 0;
+
+}
+.persona{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+    
+    }
+.persona_foto img {
+    width: 100%;
+    height: auto;
+    border-radius: 25px;
+}
+
+@media (max-width: 767px) {
+    .foto_portada {
+        display: flex;
+        justify-content: center;
+        width: auto;
+        height: 50%;
+    
+        & img {
+            width: auto;
+            height: 100%;
+        }
+    }
+
+    .textos_portada {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        align-items: center;
+    
+        & h1 {
+            color: var(--colorazul);
+            text-align: center;
+        }
+
+        & p {
+            text-align: center;
+        
+        }
+
+    }
+
+    .foto_portada1 {
+        display: flex;
+        justify-content: center;
+        width: auto;
+        height: 50%;
+
+        & img {
+            width: auto;
+            height: 100% ;
+        }
+    }
+
+    .textos_portada1 {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        align-items: center;
+    }    
+    .servicio_foto {
+        width: 75%;
+        height: auto;
+    }
+    
+    .noticias {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+    } 
+
+    .textos_noticias {
+        text-align: center;
+    }
+    .foto_noticias {
+        width: 75%;
+        height: auto;
+    }
+    
+
+/*cambiar direccion de display alinar el contenido*/
+    .banner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+    .banner_textos h3, p {
+        text-align: center;
+    }
+
+
+    /*NOSOTROS*/
+    .textos_nosotros{
+        text-align: center;
+    }
+
+    .foto_nosotros{
+        width: 75%;
+        height: auto;
+    }    
+    
+
+    .historia{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+    }
+    .texto_historia1, .texto_historia3 {
+        text-align: center;
+    }
+
+    .mision{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+    } 
+    .texto_mision h2, p{
+        text-align: center;
+    }
+    .foto_mision{
+        width: 75%;
+        height: auto;
+    }    
+    
+    .testimonio_foto {
+        width: 75%;
+        height: auto;
+    }
+    
+    .testimonio {
+        align-items: center;
+        gap: 25px;
+    
+        & h5 {
+            text-transform: none;
+            color: var(--colorverdeclaro);
+            text-align: center;
+        }
+
+        & p {
+            text-align: center;
+        }
+    }
+}
+
+@media (max-width: 1023px) {
+    .foto_portada {
+        display: flex;
+        justify-content: center;
+        width: auto;
+        height: 50%;
+    
+        & img {
+            width: auto;
+            height: 100%;
+        }
+    }
+
+    .textos_portada {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        align-items: center;
+    
+        & h1 {
+            color: var(--colorazul);
+            text-align: center;
+        }
+
+        & p {
+            text-align: center;
+        
+        }
+
+    }
+
+    .foto_portada1 {
+        display: flex;
+        justify-content: center;
+        width: auto;
+        height: 50%;
+
+        & img {
+            width: auto;
+            height: 100% ;
+        }
+    }
+
+    .textos_portada1 {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        align-items: center;
+    }    
+    .servicio_foto {
+        width: 75%;
+        height: auto;
+    }
+    
+    .noticias {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+    } 
+
+    .textos_noticias {
+        text-align: center;
+    }
+    .foto_noticias {
+        width: 75%;
+        height: auto;
+    }
+    
+
+/*cambiar direccion de display alinar el contenido*/
+    .banner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+    }
+    .banner_textos h3, p {
+        text-align: center;
+    }
+
+
+    /*NOSOTROS*/
+    .textos_nosotros{
+        text-align: center;
+    }
+
+    .foto_nosotros{
+        width: 75%;
+        height: auto;
+    }    
+    
+
+    .historia{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+    }
+    .texto_historia1, .texto_historia3 {
+        text-align: center;
+    }
+
+    .mision{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+    } 
+    .texto_mision h2, p{
+        text-align: center;
+    }
+    .foto_mision{
+        width: 75%;
+        height: auto;
+    }    
+    
+    .testimonio_foto {
+        width: 75%;
+        height: auto;
+    }
+    
+    .testimonio {
+        align-items: center;
+        gap: 25px;
+    
+        & h5 {
+            text-transform: none;
+            color: var(--colorverdeclaro);
+            text-align: center;
+        }
+
+        & p {
+            text-align: center;
+        }
+    }
+}

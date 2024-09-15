@@ -11,16 +11,15 @@ header {
     align-items: center;
     padding: 25px 0;
 }
-
-.logo1 {
+.logo {
     display: flex;
     align-items: center;
     height: 100%;
     width: auto;
 
     & img {
-        width: 150px;
-        height: auto;
+        width: auto;
+        height: 41px;
     }
 }
 
@@ -44,31 +43,32 @@ header {
             }
 
             & a:hover {
-                color: var(--coloramarrillo);
+                color: var(--colorceleste);
             }
         }
     }
 }
 
-.abrir_menu{
-    display:none ;
+.abrir_menu {
+    display: none;
 }
 
-.logo2{
+.logo2 {
     display: none;
 }
 
 @media (max-width: 767px) {
-    .header{
+
+    .header {
         display: block;
     }
 
 
-    .abrir_menu{
+    .abrir_menu {
         display: block;
     }
 
-    .logo2{
+    .logo2 {
         display: flex;
         justify-content: space-between;
         padding: 25px 0 25px 25px;
@@ -84,7 +84,7 @@ header {
         }
     }
 
-    .logo1{
+    .logo1 {
         display: flex;
         justify-content: space-between;
         padding-left: 25px;
@@ -94,13 +94,13 @@ header {
             height: 40px;
         }
 
-        & buttom img {
+        & button img {
             width: 30px;
             height: auto;
         }
     }
-    
-    .menu{
+
+    .menu {
         visibility: hidden;
         position: fixed;
         background-color: var(--colorprincipal);
@@ -111,14 +111,17 @@ header {
 
     }
 
-    .menu nav{
+
+
+    .menu nav {
         flex-direction: column;
-        
-        & ul{
+
+        & ul {
             flex-direction: column;
             align-items: center;
         }
     }
+
     .menu.visible {
         visibility: visible;
     }
@@ -126,16 +129,17 @@ header {
 }
 
 @media (max-width: 1023px) {
-    .header{
+
+    .header {
         display: block;
     }
 
 
-    .abrir_menu{
+    .abrir_menu {
         display: block;
     }
 
-    .logo2{
+    .logo2 {
         display: flex;
         justify-content: space-between;
         padding: 25px 0 25px 25px;
@@ -151,7 +155,7 @@ header {
         }
     }
 
-    .logo1{
+    .logo1 {
         display: flex;
         justify-content: space-between;
         padding-left: 25px;
@@ -161,13 +165,13 @@ header {
             height: 40px;
         }
 
-        & buttom img {
+        & button img {
             width: 30px;
             height: auto;
         }
     }
-    
-    .menu{
+
+    .menu {
         visibility: hidden;
         position: fixed;
         background-color: var(--colorprincipal);
@@ -178,20 +182,22 @@ header {
 
     }
 
-    .menu nav{
+
+
+    .menu nav {
         flex-direction: column;
-        
-        & ul{
+
+        & ul {
             flex-direction: column;
             align-items: center;
         }
     }
+
     .menu.visible {
         visibility: visible;
     }
 
 }
-
 
 
 

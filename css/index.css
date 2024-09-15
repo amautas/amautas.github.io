@@ -10,6 +10,7 @@
 #portada1 {
     background-color: #efefef;
 }
+
 .portada1 {
     height: calc(70vh - 80px);
 }
@@ -283,6 +284,53 @@
     border-radius: 25px;
 }
 
+.listas_datos {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin-top: 50px;
+}
+
+.listas_datos_1 {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.listas_datos_imagen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 75px;
+    height: 75px;
+    border-radius: 10px;
+}
+.formulario_input {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 25px;
+}
+
+.grupos_input input,
+textarea {
+    width: 100%;
+    padding: 5px 10px;
+    border-radius: 15px;
+    border: 2px solid var(--colorprincipal);
+
+}
+
+.titulomapa {
+    text-align: center;
+    padding: 50px;
+}
+
+.mapa {
+    display: flex;
+    justify-content: center;
+}
+
 @media (max-width: 767px) {
     .foto_portada {
         display: flex;
@@ -303,7 +351,7 @@
         align-items: center;
     
         & h1 {
-            color: var(--colorazul);
+            color: var(--colorprincipal);
             text-align: center;
         }
 
@@ -315,17 +363,13 @@
     }
 
     .foto_portada1 {
-        display: flex;
-        justify-content: center;
         width: auto;
         height: 50%;
-
-        & img {
-            width: auto;
-            height: 100% ;
-        }
     }
-
+    .foto_nosotros{
+        width: auto;
+        height: 50%;
+    }
     .textos_portada1 {
         display: flex;
         flex-direction: column;
@@ -371,8 +415,8 @@
     }
 
     .foto_nosotros{
-        width: 75%;
-        height: auto;
+        width: auto;
+        height: 50%;
     }    
     
 
@@ -429,8 +473,8 @@
         height: 50%;
     
         & img {
-            width: auto;
-            height: 100%;
+            width: 75%;
+            height: auto;
         }
     }
 
@@ -453,15 +497,8 @@
     }
 
     .foto_portada1 {
-        display: flex;
-        justify-content: center;
         width: auto;
         height: 50%;
-
-        & img {
-            width: auto;
-            height: 100% ;
-        }
     }
 
     .textos_portada1 {
